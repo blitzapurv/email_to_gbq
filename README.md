@@ -10,7 +10,7 @@ The functional steps in this process are broadly listed below:
 - **Cloud Scheduler :** A Cloud Scheduler job is used to schedule run the script periodically to upload data as it comes.
 
 
-This process makes us of a configuratoin file, which is a google sheet, uploadparams.gsheet.
+This process makes us of a configuratoin file, which is a google sheet, uploadparams.gsheet which is accessed and modified using Google Sheets API.
 
 The parameters in the file are described below:
 
