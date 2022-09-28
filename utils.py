@@ -56,7 +56,7 @@ def get_uploadparams():
         'https://www.googleapis.com/auth/drive.file',
         'https://spreadsheets.google.com/feeds'
         ]
-    key_file = 'dashbaording-all-clients-e80f9ab53385.json'
+    key_file = 'your_service_account_key.json'
     creds = ServiceAccountCredentials.from_json_keyfile_name(key_file,scope)
     client = gspread.authorize(creds)
     worksheet = client.open('uploadparams')
