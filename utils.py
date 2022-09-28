@@ -37,12 +37,12 @@ def send_email(from_email, from_email_pass, to_email, subject, body_text):
     #starttls() is a way to take an existing insecure connection and upgrade it to a secure connection using SSL/TLS.
     server.starttls()
     #Next, log in to the server
-    server.login(from_email, from_email_pass)#("prreporting@pivotroots.com", "vwcuvekcfubywxcg")
+    server.login(from_email, from_email_pass)
     msg = MIMEMultipart()
     msg["Subject"] = subject
     body = MIMEText(body_text)
-    msg["From"] = from_email#"prreporting@pivotroots.com"
-    msg["To"] = to_email#"ekagra.singh@pivotroots.com"
+    msg["From"] = from_email
+    msg["To"] = to_email
     msg.attach(body)
     server.sendmail(msg["From"], msg["To"],msg.as_string())
 
