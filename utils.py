@@ -47,7 +47,7 @@ def send_email(from_email, from_email_pass, to_email, subject, body_text):
     server.sendmail(msg["From"], msg["To"],msg.as_string())
 
 #Send the mail
-#tanmay.sankhe@pivotroots.com
+
 
 def get_uploadparams():
     #Authorizing the API
